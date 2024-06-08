@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Blog</title>
+    <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css">
+    <style>
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .comment-box {
+            width: 100%;
+        }
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .centered-list {
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4 center-content">
+        <div class="row justify-content-center">
+            <div class="col-md-8 content-wrapper">
+                <h1 class="mb-4">7 Reasons Why Cats Sleep So Much</h1>
+                <img src="https://media.istockphoto.com/id/938787108/photo/two-cute-kittens-in-a-fluffy-white-bed.jpg?s=612x612&w=0&k=20&c=10LphiBsn-81GCrIJzldFusflNtL_aygiIHNXYkk3C0=" class="img-fluid rounded mb-4" alt="Cats sleeping">
+                <p>Cats look adorable when lost in their dreams, oblivious to the world, sleeping for hours on end. But, as a cat parent, it may also concern you, and you may wonder, <strong>why do cats sleep so much?</strong> And, if they sleep so long, when do they play, join you at your table as you work on your laptop, or follow you around the house, meowing for your attention?</p>
+                <p>On average, cats sleep around 15 to 20 hours a day. Yes, they do! Their sleep time may vary as per their age. Older <strong>cats sleep</strong> longer than younger ones. And, although this is their normal behavior, there are several other reasons why they sleep so long, such as:</p>
+                <div class="centered-list">
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item">Energy Conservation</li>
+                        <li class="list-group-item">Predatory Instincts</li>
+                        <li class="list-group-item">Growth and Development</li>
+                        <li class="list-group-item">Healing and Recovery</li>
+                        <li class="list-group-item">Weather Conditions</li>
+                        <li class="list-group-item">Age</li>
+                        <li class="list-group-item">Boredom</li>
+                    </ul>
+                </div>
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Share your thoughts about cats!</h5>
+                        <form action="/submit" method="POST" class="comment-box">
+                            <div class="mb-3">
+                                <textarea class="form-control" id="textfield" name="textfield" rows="3" placeholder="Enter your comment"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <button type="submit" formaction="/safeparsed" class="btn btn-primary">Post comment Safely</button>
+                                <button type="submit" formaction="/unsafeparsed" class="btn btn-secondary">Post comment Unsafely</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
